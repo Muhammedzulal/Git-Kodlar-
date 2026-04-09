@@ -1,0 +1,46 @@
+pwd  				güncel klasörü göster
+ls  				listele
+cd  				konumunu değiş
+cd ..  				bir önceki klasör
+mkdir isim  			klasör oluştur
+touch isim			dosya oluştur
+rm  				kaldır/sil
+rm -rf  			klasör sil  
+
+----------------------------------------
+
+git status			durum kontrolü
+git add . 			tüm değişiklikleri sepete ekler
+git commit -m "Mesaj" 		mesajlı commit eder(ürünleri satın almak)
+git log 			değişiklikleri gösterir
+
+----------------------------------------
+
+git branch isim			dal oluşturur
+git branch			local dalları gösterir
+git branch -r			web dalları gösterir
+git branch -a			hem local hem web dalları gösterir
+git switch isim			dal değişir
+git merge isim -m "msj" 	birleştirme işlemi
+git branch -d isim		dalı güvenli silme
+git branch -D isim		dalı zorla silme
+git push origin isim		dalı webe ekleme
+git push origin --delete isim	dalı webden silme
+
+---------------------------------------
+
+git restore isim		yaptığın ve add etmediğin değişikliği localde geri alır.
+git restore --staged isim	add yaptığın değişikliği sahneden(Index'den) alır.
+git reset commit_kodu		tarihten de silerek geçmişe döner 
+git reser --hard commit_kodu	tarihten de silerek geçmişe döner(codelar Ide'den de gider)
+git revert commit_kodu		tarihler yerinde kalır ordan devam eder web'e push edildiyse bu kullanılmalıdır. 
+git stash			henüz commitlenmemiş değişikleri rafa alır ve dal değişip başka yerde çalışmamıza yardımcı olur
+git pop				stashle rafa aldığımız değişiklileri dışarı atarak kodumuza koyar
+
+---------------------------------------
+
+git clone url_ismi             	Projeyi bilgisayara ilk kez indirir.
+git fetch                   	Sunucudaki değişiklikleri kontrol eder (koduna dokunmaz).
+git pull origin dal_adi       	Sunucudaki kodları indirir ve senin kodunla birleştirir.
+git push origin dal_adi       	Senin yaptığın commitleri sunucuya (webe) gönderir.
+---------------------------------------
